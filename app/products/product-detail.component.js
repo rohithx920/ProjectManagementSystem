@@ -24,7 +24,8 @@ var ProductDetailComponent = (function () {
         var id = +this._route.snapshot.params['id'];
         this.pageTitle += ": " + id;
         //this.product=
-        this._productService.getProducts().subscribe(function (products) { return _this.products = products; }, function (error) { return _this.errorMessage = error; });
+        //this.product=
+        this._productService.getProduct(id).subscribe(function (product) { return _this.product = product; }, function (error) { return _this.errorMessage = error; });
         console.log(this.products + "****" + this.product);
     };
     ProductDetailComponent.prototype.onBack = function () {

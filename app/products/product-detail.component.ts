@@ -20,7 +20,8 @@ export class ProductDetailComponent implements OnInit{
         let id=+this._route.snapshot.params['id'];
         this.pageTitle +=`: ${id}`;
         //this.product=
-        this._productService.getProducts().subscribe(products => this.products =products,
+        //this.product=
+        this._productService.getProduct(id).subscribe(product => this.product =product,
        error => this.errorMessage=<any> error);
        console.log(this.products+"****"+this.product);
     }

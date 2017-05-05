@@ -26,8 +26,14 @@
                     <div class='col-md-6'>{{product.price}}</div>
                 </div>
                 <div class='row'>
-                    <div class='col-md-3'>:</div>
+                    <div class='col-md-3'>Star Rating:</div>
                     <div class='col-md-6'>{{product.starRating}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3'>Image Url:</div>
+                    <div class='col-md-6'>
+                        <img [src]='product.imageUrl' [title]='product.productName'>
+                    </div>
                 </div>
             </div>
         </div>
