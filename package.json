@@ -34,7 +34,7 @@
 	"engines":{
 	"node":"~7.4.0",
 	"npm": "~4.5.0"
-	}
+	},
     "devDependencies": {
         "concurrently": "^2.2.0",
         "lite-server": "^2.2.0",
